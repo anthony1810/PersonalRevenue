@@ -8,15 +8,19 @@
 
 #import <Foundation/Foundation.h>
 #import "Saving.h"
+#import "Income.h"
+#import "MyBank.h"
 
 @interface SavingList : NSObject
 
 @property NSMutableArray *container;
--(instancetype) init;
--(void) addSaving: (Saving *) savingRevenue;
--(void) removeSaving: (Saving *) savingRevenue;
+@property MyBank *myBank;
+
+-(instancetype) initWithBank: (MyBank *) bank;
+-(void) addSaving: (Income *) income;
+-(void) removeSaving: (Income *) income;
 -(NSMutableArray *) lookUpSavingsBySource: (NSString *) savingSrc;
--(Saving *) lookUpSavingByDate: (NSDate *) dateTarget;
+-(Income *) lookUpSavingByDate: (NSDate *) dateTarget;
 -(void) printAll;
 
 

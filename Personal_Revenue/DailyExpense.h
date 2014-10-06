@@ -15,6 +15,7 @@
 @property double amount;
 @property NSDate *date;
 
+
 -(instancetype) initWithName: (NSString *) name AndLocation: (NSString *) location andAmount: (double) amount andDate: (NSDate *) date;
 
 -(void) print;

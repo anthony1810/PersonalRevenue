@@ -8,12 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "DailyExpense.h"
+#import "MyPocket.h"
 
 @interface DailyExpenseList : NSObject
 
 @property NSMutableArray *container;
+@property MyPocket *myPocket;
 
--(void) addDailyRevenue: (DailyExpense *) dailyExpense;
+-(instancetype) initWithPocket: (MyPocket *) myPocket;
+-(bool) addDailyExpense: (DailyExpense *) dailyExpense;
 -(void) removeDailyExpense: (DailyExpense *) dailyExpense;
 -(NSMutableArray *) lookUpDailyExpenseByName: (NSString *) dailyExpenseName;
 -(DailyExpense *) lookUpDailyExpenseByDate: (NSDate *) dateTarget;

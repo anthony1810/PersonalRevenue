@@ -10,9 +10,10 @@
 
 @implementation DailyExpenseList
 
--(instancetype) init{
+-(instancetype) initWithPocket:(MyPocket *)myPocket{
     self = [super init];
     if(self){
+        _myPocket = myPocket;
         _container = [[NSMutableArray alloc] init];
     }
     
@@ -44,12 +45,20 @@
 }
 
 
--(void) addDailyRevenue:(DailyExpense *)dailyExpenseName{
-    [_container addObject:dailyExpenseName];
+-(bool) addDailyExpense:(DailyExpense *)dailyExpenseName{
+    if(_myPocket.moneyAmount >= dailyExpenseName.amount){
+        [_container addObject:dailyExpenseName];
+        [_myPocket withdraw:dailyExpenseName.amount];
+        return true;
+    }else{
+        return false;
+    }
+    
 }
 
 -(void) removeDailyExpense:(DailyExpense *)dailyExpense{
     [_container removeObjectIdenticalTo:dailyExpense];
+    [_myPocket addMoney:dailyExpense.amount];
 }
 
 

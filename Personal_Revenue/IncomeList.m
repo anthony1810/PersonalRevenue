@@ -11,9 +11,11 @@
 @implementation IncomeList
 
 
--(instancetype) init{
+-(instancetype) initWithPocket: (MyPocket *) pocket AndMyBank: (MyBank *) bank{
     self = [super init];
     if(self){
+        _myPocket = pocket;
+        _myBank = bank;
         _container = [[NSMutableArray alloc] init];
     }
     
@@ -34,6 +36,7 @@
     return resultArray;
 }
 
+
 -(Income *) lookUpIncomeByDate: (NSDate *) dateTarget{
     Income *resultIncome;
     for(Income *anIncome in self.container){
@@ -44,11 +47,21 @@
     return resultIncome;
 }
 
--(void) addIncome:(Income *)income{
+-(void) addIncome: (Income *) income{
+    if(!income.isBankMoney){
+        [_myPocket addMoney: income.amount];
+    }else{
+        [_myBank addMoney: income.amount];
+    }
     [self.container addObject:income];
 }
 
 -(void) removeIncome:(Income *)income{
+    if(!income.isBankMoney){
+        [_myPocket withdraw:income.amount];
+    }else{
+        [_myBank withdraw:income.amount];
+    }
     [self.container removeObjectIdenticalTo:income];
     
 }
