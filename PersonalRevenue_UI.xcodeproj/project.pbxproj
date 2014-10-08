@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D3F67A719E373F000B43A1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D3F67A619E373F000B43A1C /* Foundation.framework */; };
+		0D3F67A919E373F000B43A1C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D3F67A819E373F000B43A1C /* CoreGraphics.framework */; };
+		0D3F67AB19E373F000B43A1C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D3F67AA19E373F000B43A1C /* UIKit.framework */; };
+		0D3F67B119E373F000B43A1C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0D3F67AF19E373F000B43A1C /* InfoPlist.strings */; };
+		0D3F67B319E373F000B43A1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F67B219E373F000B43A1C /* main.m */; };
+		0D3F67B719E373F000B43A1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F67B619E373F000B43A1C /* AppDelegate.m */; };
+		0D3F67BA19E373F000B43A1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D3F67B819E373F000B43A1C /* Main.storyboard */; };
+		0D3F67BD19E373F000B43A1C /* MainScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F67BC19E373F000B43A1C /* MainScreen.m */; };
+		0D3F67BF19E373F000B43A1C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D3F67BE19E373F000B43A1C /* Images.xcassets */; };
+		0D3F67C619E373F000B43A1C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D3F67C519E373F000B43A1C /* XCTest.framework */; };
+		0D3F67C719E373F000B43A1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D3F67A619E373F000B43A1C /* Foundation.framework */; };
+		0D3F67C819E373F000B43A1C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D3F67AA19E373F000B43A1C /* UIKit.framework */; };
+		0D3F67D019E373F000B43A1C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0D3F67CE19E373F000B43A1C /* InfoPlist.strings */; };
+		0D3F67D219E373F000B43A1C /* PersonalRevenue_UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F67D119E373F000B43A1C /* PersonalRevenue_UITests.m */; };
+		0D3F67DC19E3898C00B43A1C /* income-icon.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0D3F67DB19E3898C00B43A1C /* income-icon.gif */; };
+		0D3F67DE19E38AC100B43A1C /* daily-expense.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D3F67DD19E38AC100B43A1C /* daily-expense.png */; };
+		0D3F67E019E38B6500B43A1C /* planner.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D3F67DF19E38B6500B43A1C /* planner.png */; };
+		0D3F681219E38C0B00B43A1C /* info.ico in Resources */ = {isa = PBXBuildFile; fileRef = 0D3F681119E38C0B00B43A1C /* info.ico */; };
+		0D3F681419E38C4A00B43A1C /* analyse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D3F681319E38C4A00B43A1C /* analyse.jpg */; };
+		0D3F681619E38CE600B43A1C /* bank.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D3F681519E38CE600B43A1C /* bank.jpg */; };
+		0D3F681C19E39DE500B43A1C /* CustomIOS7AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F681B19E39DE500B43A1C /* CustomIOS7AlertView.m */; };
+		0D3F682219E3BA0F00B43A1C /* PocketPopUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F682119E3BA0F00B43A1C /* PocketPopUp.m */; };
+		0D3F682519E3BF6500B43A1C /* BankPopUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F682419E3BF6500B43A1C /* BankPopUp.m */; };
+		0D3F682819E3C21D00B43A1C /* TodaySpendPopUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F682719E3C21D00B43A1C /* TodaySpendPopUp.m */; };
+		0D3F683219E3D85D00B43A1C /* RevenueAnalyser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F683119E3D85D00B43A1C /* RevenueAnalyser.m */; };
+		0D3F683519E3E2E300B43A1C /* IncomesTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F683419E3E2E300B43A1C /* IncomesTableView.m */; };
+		0D3F683819E3E35E00B43A1C /* IncomeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F683719E3E35E00B43A1C /* IncomeTableCell.m */; };
+		0D3F683E19E3F81200B43A1C /* DailyExpense.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F683D19E3F81200B43A1C /* DailyExpense.m */; };
+		0D3F685119E3F82600B43A1C /* DailyExpenseList.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F684019E3F82600B43A1C /* DailyExpenseList.m */; };
+		0D3F685219E3F82600B43A1C /* DataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F684219E3F82600B43A1C /* DataHandler.m */; };
+		0D3F685319E3F82600B43A1C /* Income.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F684419E3F82600B43A1C /* Income.m */; };
+		0D3F685419E3F82600B43A1C /* IncomeList.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F684619E3F82600B43A1C /* IncomeList.m */; };
+		0D3F685519E3F82600B43A1C /* MyBank.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F684819E3F82600B43A1C /* MyBank.m */; };
+		0D3F685619E3F82600B43A1C /* MyPocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F684A19E3F82600B43A1C /* MyPocket.m */; };
+		0D3F685719E3F82600B43A1C /* Saving.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F684C19E3F82600B43A1C /* Saving.m */; };
+		0D3F685819E3F82600B43A1C /* SavingList.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F684E19E3F82600B43A1C /* SavingList.m */; };
+		0D3F685919E3F82600B43A1C /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F685019E3F82600B43A1C /* Utility.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D3F67C919E373F000B43A1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D3F679B19E373F000B43A1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D3F67A219E373F000B43A1C;
+			remoteInfo = PersonalRevenue_UI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D3F67A319E373F000B43A1C /* PersonalRevenue_UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalRevenue_UI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D3F67A619E373F000B43A1C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0D3F67A819E373F000B43A1C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0D3F67AA19E373F000B43A1C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0D3F67AE19E373F000B43A1C /* PersonalRevenue_UI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PersonalRevenue_UI-Info.plist"; sourceTree = "<group>"; };
+		0D3F67B019E373F000B43A1C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0D3F67B219E373F000B43A1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0D3F67B419E373F000B43A1C /* PersonalRevenue_UI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PersonalRevenue_UI-Prefix.pch"; sourceTree = "<group>"; };
+		0D3F67B519E373F000B43A1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0D3F67B619E373F000B43A1C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0D3F67B919E373F000B43A1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0D3F67BB19E373F000B43A1C /* MainScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainScreen.h; sourceTree = "<group>"; };
+		0D3F67BC19E373F000B43A1C /* MainScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainScreen.m; sourceTree = "<group>"; };
+		0D3F67BE19E373F000B43A1C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0D3F67C419E373F000B43A1C /* PersonalRevenue_UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonalRevenue_UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D3F67C519E373F000B43A1C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0D3F67CD19E373F000B43A1C /* PersonalRevenue_UITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PersonalRevenue_UITests-Info.plist"; sourceTree = "<group>"; };
+		0D3F67CF19E373F000B43A1C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0D3F67D119E373F000B43A1C /* PersonalRevenue_UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalRevenue_UITests.m; sourceTree = "<group>"; };
+		0D3F67DB19E3898C00B43A1C /* income-icon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "income-icon.gif"; sourceTree = "<group>"; };
+		0D3F67DD19E38AC100B43A1C /* daily-expense.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "daily-expense.png"; sourceTree = "<group>"; };
+		0D3F67DF19E38B6500B43A1C /* planner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = planner.png; sourceTree = "<group>"; };
+		0D3F681119E38C0B00B43A1C /* info.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = info.ico; sourceTree = "<group>"; };
+		0D3F681319E38C4A00B43A1C /* analyse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = analyse.jpg; sourceTree = "<group>"; };
+		0D3F681519E38CE600B43A1C /* bank.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bank.jpg; sourceTree = "<group>"; };
+		0D3F681A19E39DE500B43A1C /* CustomIOS7AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomIOS7AlertView.h; sourceTree = "<group>"; };
+		0D3F681B19E39DE500B43A1C /* CustomIOS7AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomIOS7AlertView.m; sourceTree = "<group>"; };
+		0D3F682019E3BA0F00B43A1C /* PocketPopUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PocketPopUp.h; sourceTree = "<group>"; };
+		0D3F682119E3BA0F00B43A1C /* PocketPopUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PocketPopUp.m; sourceTree = "<group>"; };
+		0D3F682319E3BF6500B43A1C /* BankPopUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankPopUp.h; sourceTree = "<group>"; };
+		0D3F682419E3BF6500B43A1C /* BankPopUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankPopUp.m; sourceTree = "<group>"; };
+		0D3F682619E3C21D00B43A1C /* TodaySpendPopUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodaySpendPopUp.h; sourceTree = "<group>"; };
+		0D3F682719E3C21D00B43A1C /* TodaySpendPopUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodaySpendPopUp.m; sourceTree = "<group>"; };
+		0D3F683019E3D85D00B43A1C /* RevenueAnalyser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RevenueAnalyser.h; sourceTree = "<group>"; };
+		0D3F683119E3D85D00B43A1C /* RevenueAnalyser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RevenueAnalyser.m; sourceTree = "<group>"; };
+		0D3F683319E3E2E300B43A1C /* IncomesTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncomesTableView.h; sourceTree = "<group>"; };
+		0D3F683419E3E2E300B43A1C /* IncomesTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncomesTableView.m; sourceTree = "<group>"; };
+		0D3F683619E3E35E00B43A1C /* IncomeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncomeTableCell.h; sourceTree = "<group>"; };
+		0D3F683719E3E35E00B43A1C /* IncomeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncomeTableCell.m; sourceTree = "<group>"; };
+		0D3F683C19E3F81200B43A1C /* DailyExpense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyExpense.h; sourceTree = "<group>"; };
+		0D3F683D19E3F81200B43A1C /* DailyExpense.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyExpense.m; sourceTree = "<group>"; };
+		0D3F683F19E3F82600B43A1C /* DailyExpenseList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyExpenseList.h; sourceTree = "<group>"; };
+		0D3F684019E3F82600B43A1C /* DailyExpenseList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyExpenseList.m; sourceTree = "<group>"; };
+		0D3F684119E3F82600B43A1C /* DataHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataHandler.h; sourceTree = "<group>"; };
+		0D3F684219E3F82600B43A1C /* DataHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataHandler.m; sourceTree = "<group>"; };
+		0D3F684319E3F82600B43A1C /* Income.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Income.h; sourceTree = "<group>"; };
+		0D3F684419E3F82600B43A1C /* Income.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Income.m; sourceTree = "<group>"; };
+		0D3F684519E3F82600B43A1C /* IncomeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncomeList.h; sourceTree = "<group>"; };
+		0D3F684619E3F82600B43A1C /* IncomeList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncomeList.m; sourceTree = "<group>"; };
+		0D3F684719E3F82600B43A1C /* MyBank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBank.h; sourceTree = "<group>"; };
+		0D3F684819E3F82600B43A1C /* MyBank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBank.m; sourceTree = "<group>"; };
+		0D3F684919E3F82600B43A1C /* MyPocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPocket.h; sourceTree = "<group>"; };
+		0D3F684A19E3F82600B43A1C /* MyPocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPocket.m; sourceTree = "<group>"; };
+		0D3F684B19E3F82600B43A1C /* Saving.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Saving.h; sourceTree = "<group>"; };
+		0D3F684C19E3F82600B43A1C /* Saving.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Saving.m; sourceTree = "<group>"; };
+		0D3F684D19E3F82600B43A1C /* SavingList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavingList.h; sourceTree = "<group>"; };
+		0D3F684E19E3F82600B43A1C /* SavingList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SavingList.m; sourceTree = "<group>"; };
+		0D3F684F19E3F82600B43A1C /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		0D3F685019E3F82600B43A1C /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D3F67A019E373F000B43A1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D3F67A919E373F000B43A1C /* CoreGraphics.framework in Frameworks */,
+				0D3F67AB19E373F000B43A1C /* UIKit.framework in Frameworks */,
+				0D3F67A719E373F000B43A1C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D3F67C119E373F000B43A1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D3F67C619E373F000B43A1C /* XCTest.framework in Frameworks */,
+				0D3F67C819E373F000B43A1C /* UIKit.framework in Frameworks */,
+				0D3F67C719E373F000B43A1C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D3F679A19E373F000B43A1C = {
+			isa = PBXGroup;
+			children = (
+				0D3F67AC19E373F000B43A1C /* PersonalRevenue_UI */,
+				0D3F67CB19E373F000B43A1C /* PersonalRevenue_UITests */,
+				0D3F67A519E373F000B43A1C /* Frameworks */,
+				0D3F67A419E373F000B43A1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0D3F67A419E373F000B43A1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D3F67A319E373F000B43A1C /* PersonalRevenue_UI.app */,
+				0D3F67C419E373F000B43A1C /* PersonalRevenue_UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D3F67A519E373F000B43A1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D3F67A619E373F000B43A1C /* Foundation.framework */,
+				0D3F67A819E373F000B43A1C /* CoreGraphics.framework */,
+				0D3F67AA19E373F000B43A1C /* UIKit.framework */,
+				0D3F67C519E373F000B43A1C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0D3F67AC19E373F000B43A1C /* PersonalRevenue_UI */ = {
+			isa = PBXGroup;
+			children = (
+				0D3F683919E3F56800B43A1C /* View */,
+				0D3F683B19E3F69700B43A1C /* Model */,
+				0D3F67BE19E373F000B43A1C /* Images.xcassets */,
+				0D3F67AD19E373F000B43A1C /* Supporting Files */,
+			);
+			path = PersonalRevenue_UI;
+			sourceTree = "<group>";
+		};
+		0D3F67AD19E373F000B43A1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D3F681A19E39DE500B43A1C /* CustomIOS7AlertView.h */,
+				0D3F681B19E39DE500B43A1C /* CustomIOS7AlertView.m */,
+				0D3F681519E38CE600B43A1C /* bank.jpg */,
+				0D3F681319E38C4A00B43A1C /* analyse.jpg */,
+				0D3F681119E38C0B00B43A1C /* info.ico */,
+				0D3F67DF19E38B6500B43A1C /* planner.png */,
+				0D3F67DD19E38AC100B43A1C /* daily-expense.png */,
+				0D3F67DB19E3898C00B43A1C /* income-icon.gif */,
+				0D3F67AE19E373F000B43A1C /* PersonalRevenue_UI-Info.plist */,
+				0D3F67AF19E373F000B43A1C /* InfoPlist.strings */,
+				0D3F67B219E373F000B43A1C /* main.m */,
+				0D3F67B419E373F000B43A1C /* PersonalRevenue_UI-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0D3F67CB19E373F000B43A1C /* PersonalRevenue_UITests */ = {
+			isa = PBXGroup;
+			children = (
+				0D3F67D119E373F000B43A1C /* PersonalRevenue_UITests.m */,
+				0D3F67CC19E373F000B43A1C /* Supporting Files */,
+			);
+			path = PersonalRevenue_UITests;
+			sourceTree = "<group>";
+		};
+		0D3F67CC19E373F000B43A1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D3F67CD19E373F000B43A1C /* PersonalRevenue_UITests-Info.plist */,
+				0D3F67CE19E373F000B43A1C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0D3F683919E3F56800B43A1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0D3F67B519E373F000B43A1C /* AppDelegate.h */,
+				0D3F67B619E373F000B43A1C /* AppDelegate.m */,
+				0D3F67B819E373F000B43A1C /* Main.storyboard */,
+				0D3F67BB19E373F000B43A1C /* MainScreen.h */,
+				0D3F67BC19E373F000B43A1C /* MainScreen.m */,
+				0D3F682019E3BA0F00B43A1C /* PocketPopUp.h */,
+				0D3F682119E3BA0F00B43A1C /* PocketPopUp.m */,
+				0D3F682319E3BF6500B43A1C /* BankPopUp.h */,
+				0D3F682419E3BF6500B43A1C /* BankPopUp.m */,
+				0D3F682619E3C21D00B43A1C /* TodaySpendPopUp.h */,
+				0D3F682719E3C21D00B43A1C /* TodaySpendPopUp.m */,
+				0D3F683019E3D85D00B43A1C /* RevenueAnalyser.h */,
+				0D3F683119E3D85D00B43A1C /* RevenueAnalyser.m */,
+				0D3F683319E3E2E300B43A1C /* IncomesTableView.h */,
+				0D3F683419E3E2E300B43A1C /* IncomesTableView.m */,
+				0D3F683619E3E35E00B43A1C /* IncomeTableCell.h */,
+				0D3F683719E3E35E00B43A1C /* IncomeTableCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0D3F683B19E3F69700B43A1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0D3F683F19E3F82600B43A1C /* DailyExpenseList.h */,
+				0D3F684019E3F82600B43A1C /* DailyExpenseList.m */,
+				0D3F684119E3F82600B43A1C /* DataHandler.h */,
+				0D3F684219E3F82600B43A1C /* DataHandler.m */,
+				0D3F684319E3F82600B43A1C /* Income.h */,
+				0D3F684419E3F82600B43A1C /* Income.m */,
+				0D3F684519E3F82600B43A1C /* IncomeList.h */,
+				0D3F684619E3F82600B43A1C /* IncomeList.m */,
+				0D3F684719E3F82600B43A1C /* MyBank.h */,
+				0D3F684819E3F82600B43A1C /* MyBank.m */,
+				0D3F684919E3F82600B43A1C /* MyPocket.h */,
+				0D3F684A19E3F82600B43A1C /* MyPocket.m */,
+				0D3F684B19E3F82600B43A1C /* Saving.h */,
+				0D3F684C19E3F82600B43A1C /* Saving.m */,
+				0D3F684D19E3F82600B43A1C /* SavingList.h */,
+				0D3F684E19E3F82600B43A1C /* SavingList.m */,
+				0D3F684F19E3F82600B43A1C /* Utility.h */,
+				0D3F685019E3F82600B43A1C /* Utility.m */,
+				0D3F683C19E3F81200B43A1C /* DailyExpense.h */,
+				0D3F683D19E3F81200B43A1C /* DailyExpense.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D3F67A219E373F000B43A1C /* PersonalRevenue_UI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D3F67D519E373F000B43A1C /* Build configuration list for PBXNativeTarget "PersonalRevenue_UI" */;
+			buildPhases = (
+				0D3F679F19E373F000B43A1C /* Sources */,
+				0D3F67A019E373F000B43A1C /* Frameworks */,
+				0D3F67A119E373F000B43A1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PersonalRevenue_UI;
+			productName = PersonalRevenue_UI;
+			productReference = 0D3F67A319E373F000B43A1C /* PersonalRevenue_UI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0D3F67C319E373F000B43A1C /* PersonalRevenue_UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D3F67D819E373F000B43A1C /* Build configuration list for PBXNativeTarget "PersonalRevenue_UITests" */;
+			buildPhases = (
+				0D3F67C019E373F000B43A1C /* Sources */,
+				0D3F67C119E373F000B43A1C /* Frameworks */,
+				0D3F67C219E373F000B43A1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D3F67CA19E373F000B43A1C /* PBXTargetDependency */,
+			);
+			name = PersonalRevenue_UITests;
+			productName = PersonalRevenue_UITests;
+			productReference = 0D3F67C419E373F000B43A1C /* PersonalRevenue_UITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D3F679B19E373F000B43A1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "nhatquang@floatingcube.com";
+				TargetAttributes = {
+					0D3F67C319E373F000B43A1C = {
+						TestTargetID = 0D3F67A219E373F000B43A1C;
+					};
+				};
+			};
+			buildConfigurationList = 0D3F679E19E373F000B43A1C /* Build configuration list for PBXProject "PersonalRevenue_UI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D3F679A19E373F000B43A1C;
+			productRefGroup = 0D3F67A419E373F000B43A1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D3F67A219E373F000B43A1C /* PersonalRevenue_UI */,
+				0D3F67C319E373F000B43A1C /* PersonalRevenue_UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D3F67A119E373F000B43A1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D3F67DC19E3898C00B43A1C /* income-icon.gif in Resources */,
+				0D3F67DE19E38AC100B43A1C /* daily-expense.png in Resources */,
+				0D3F67BF19E373F000B43A1C /* Images.xcassets in Resources */,
+				0D3F67B119E373F000B43A1C /* InfoPlist.strings in Resources */,
+				0D3F681619E38CE600B43A1C /* bank.jpg in Resources */,
+				0D3F67E019E38B6500B43A1C /* planner.png in Resources */,
+				0D3F681419E38C4A00B43A1C /* analyse.jpg in Resources */,
+				0D3F67BA19E373F000B43A1C /* Main.storyboard in Resources */,
+				0D3F681219E38C0B00B43A1C /* info.ico in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D3F67C219E373F000B43A1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D3F67D019E373F000B43A1C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D3F679F19E373F000B43A1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D3F682819E3C21D00B43A1C /* TodaySpendPopUp.m in Sources */,
+				0D3F685219E3F82600B43A1C /* DataHandler.m in Sources */,
+				0D3F681C19E39DE500B43A1C /* CustomIOS7AlertView.m in Sources */,
+				0D3F67BD19E373F000B43A1C /* MainScreen.m in Sources */,
+				0D3F683E19E3F81200B43A1C /* DailyExpense.m in Sources */,
+				0D3F685519E3F82600B43A1C /* MyBank.m in Sources */,
+				0D3F685119E3F82600B43A1C /* DailyExpenseList.m in Sources */,
+				0D3F682219E3BA0F00B43A1C /* PocketPopUp.m in Sources */,
+				0D3F685619E3F82600B43A1C /* MyPocket.m in Sources */,
+				0D3F685719E3F82600B43A1C /* Saving.m in Sources */,
+				0D3F67B719E373F000B43A1C /* AppDelegate.m in Sources */,
+				0D3F683819E3E35E00B43A1C /* IncomeTableCell.m in Sources */,
+				0D3F685919E3F82600B43A1C /* Utility.m in Sources */,
+				0D3F685819E3F82600B43A1C /* SavingList.m in Sources */,
+				0D3F685419E3F82600B43A1C /* IncomeList.m in Sources */,
+				0D3F682519E3BF6500B43A1C /* BankPopUp.m in Sources */,
+				0D3F685319E3F82600B43A1C /* Income.m in Sources */,
+				0D3F67B319E373F000B43A1C /* main.m in Sources */,
+				0D3F683219E3D85D00B43A1C /* RevenueAnalyser.m in Sources */,
+				0D3F683519E3E2E300B43A1C /* IncomesTableView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D3F67C019E373F000B43A1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D3F67D219E373F000B43A1C /* PersonalRevenue_UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D3F67CA19E373F000B43A1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D3F67A219E373F000B43A1C /* PersonalRevenue_UI */;
+			targetProxy = 0D3F67C919E373F000B43A1C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0D3F67AF19E373F000B43A1C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D3F67B019E373F000B43A1C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0D3F67B819E373F000B43A1C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D3F67B919E373F000B43A1C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0D3F67CE19E373F000B43A1C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D3F67CF19E373F000B43A1C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0D3F67D319E373F000B43A1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0D3F67D419E373F000B43A1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0D3F67D619E373F000B43A1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PersonalRevenue_UI/PersonalRevenue_UI-Prefix.pch";
+				INFOPLIST_FILE = "PersonalRevenue_UI/PersonalRevenue_UI-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0D3F67D719E373F000B43A1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PersonalRevenue_UI/PersonalRevenue_UI-Prefix.pch";
+				INFOPLIST_FILE = "PersonalRevenue_UI/PersonalRevenue_UI-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0D3F67D919E373F000B43A1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PersonalRevenue_UI.app/PersonalRevenue_UI";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PersonalRevenue_UI/PersonalRevenue_UI-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PersonalRevenue_UITests/PersonalRevenue_UITests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0D3F67DA19E373F000B43A1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PersonalRevenue_UI.app/PersonalRevenue_UI";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PersonalRevenue_UI/PersonalRevenue_UI-Prefix.pch";
+				INFOPLIST_FILE = "PersonalRevenue_UITests/PersonalRevenue_UITests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D3F679E19E373F000B43A1C /* Build configuration list for PBXProject "PersonalRevenue_UI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D3F67D319E373F000B43A1C /* Debug */,
+				0D3F67D419E373F000B43A1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D3F67D519E373F000B43A1C /* Build configuration list for PBXNativeTarget "PersonalRevenue_UI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D3F67D619E373F000B43A1C /* Debug */,
+				0D3F67D719E373F000B43A1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D3F67D819E373F000B43A1C /* Build configuration list for PBXNativeTarget "PersonalRevenue_UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D3F67D919E373F000B43A1C /* Debug */,
+				0D3F67DA19E373F000B43A1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D3F679B19E373F000B43A1C /* Project object */;
+}
