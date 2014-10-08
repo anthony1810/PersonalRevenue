@@ -17,32 +17,64 @@
     
     // set the title
     self.title = @"Revenue Analyser";
+    [self createHighestValueView];
+    [self createHighestRateView];
+    [self createWithdrawMostView];
+    [self createBuyingTimeView];
+    
+}
 
-    // construct first name cell, section 0, row 0
-    self.highestValueCell1 = [[UITableViewCell alloc] init];
-    self.highestValueCell1.backgroundColor = [UIColor colorWithRed:1.0f green:1.0f blue:1.0f alpha:0.5f];
+-(void) createHighestValueView{
     
-    self.highestValueCell2 = [[UITableViewCell alloc] init];
-    self.highestValueCell2.backgroundColor = [UIColor colorWithRed:1.0f green:1.0f blue:1.0f alpha:0.5f];
+    /**** highest value item cell ****/
+    self.highestValueCell = [[UITableViewCell alloc] init];
     
-    self.highestRateCell1 = [[UITableViewCell alloc] init];
-    self.highestRateCell1.backgroundColor = [UIColor colorWithRed:1.0f green:1.0f blue:1.0f alpha:0.5f];
-    
-    self.highestRateCell2 = [[UITableViewCell alloc] init];
-    self.highestRateCell2.backgroundColor = [UIColor colorWithRed:1.0f green:1.0f blue:1.0f alpha:0.5f];
-    
-    self.withdrawMostCell1 = [[UITableViewCell alloc] init];
-    self.withdrawMostCell1.backgroundColor = [UIColor colorWithRed:1.0f green:1.0f blue:1.0f alpha:0.5f];
-    
-    self.withdrawMostCell2 = [[UITableViewCell alloc] init];
-    self.withdrawMostCell2.backgroundColor = [UIColor colorWithRed:1.0f green:1.0f blue:1.0f alpha:0.5f];
-    
-    self.buyingTimeCell1 = [[UITableViewCell alloc] init];
-    self.buyingTimeCell1.backgroundColor = [UIColor colorWithRed:1.0f green:1.0f blue:1.0f alpha:0.5f];
-    
-    self.buyingTimeCell2 = [[UITableViewCell alloc] init];
-    self.buyingTimeCell2.backgroundColor = [UIColor colorWithRed:1.0f green:1.0f blue:1.0f alpha:0.5f];
+    //title
+    [self.highestValueCell addSubview:[self setLabelToCellTitle:_highestItemValueTitle andText:@"Buy A Huyndai"]];
+    //money
+    [self.highestValueCell addSubview:[self setLabelToCellMoney:_highestItemValue andText:@"$120000"]];
+    //date
+    [self.highestValueCell addSubview:[self setLabelToCellDate:_highestItemDate andText:@"18/10/1991 6:00:00"]];
+}
 
+-(void) createHighestRateView{
+    /**** highest rate item cell ****/
+    self.highestRateCell = [[UITableViewCell alloc] init];
+    
+    //title
+    [self.highestRateCell addSubview:[self setLabelToCellTitle:_highestSpendingRateTitle andText:@"Buy A Huyndai"]];
+    //money
+    [self.highestRateCell addSubview:[self setLabelToCellMoney:_highestSpendingRateValue andText:@"$120000"]];
+    //date
+    [self.highestRateCell addSubview:[self setLabelToCellDate:_highestSpendingRateDate andText:@"18/10/1991 6:00:00"]];
+
+}
+
+-(void) createWithdrawMostView{
+    /**** highest withdraw Most Money cell ****/
+    self.withdrawMostCell = [[UITableViewCell alloc] init];
+    
+    //title
+    [self.withdrawMostCell addSubview:[self setLabelToCellTitle:_withdrawMostMoneyTitle andText:@"Buy A Huyndai"]];
+    //money
+    [self.withdrawMostCell addSubview:[self setLabelToCellMoney:_withdrawMostMoneyValue andText:@"$120000"]];
+    //date
+    [self.withdrawMostCell addSubview:[self setLabelToCellDate:_withdrawMostMoneyDate
+                                                       andText:@"18/10/1991 6:00:00"]];
+}
+
+-(void) createBuyingTimeView{
+    
+    /**** highest buying time item cell ****/
+    self.buyingTimeCell = [[UITableViewCell alloc] init];
+    
+    //title
+    [self.buyingTimeCell addSubview:[self setLabelToCellTitle:_buyingTimeMonthTitle
+                                                      andText:@"Buy A Huyndai"]];
+    //money
+    [self.buyingTimeCell addSubview:[self setLabelToCellMoney:_buyingTimeMonthValue andText:@"$120000"]];
+    //date
+    [self.buyingTimeCell addSubview:[self setLabelToCellDate:_buyingTimeMonthDate andText:@"18/10/1991 6:00:00"]];
 }
 
 #pragma Table View Data Source
@@ -53,17 +85,35 @@
     return 4;
 }
 
+-(UILabel *) setLabelToCellTitle: (UILabel *) labelTarget andText: (NSString *) text{
+    labelTarget =[[UILabel alloc] initWithFrame:CGRectMake(20, 0, 150, 30)];
+    [labelTarget setText:text];
+    [labelTarget setTextColor:[UIColor blueColor]];
+    [labelTarget setFont:[UIFont systemFontOfSize:12]];
+    return labelTarget;
+}
+
+-(UILabel *) setLabelToCellMoney: (UILabel *) labelTarget andText: (NSString *) text{
+    labelTarget = [[UILabel alloc] initWithFrame:CGRectMake(20, 20, 150, 30)];
+    [labelTarget setFont:[UIFont systemFontOfSize:10]];
+    [labelTarget setText:text];
+    [labelTarget setTextColor:[UIColor grayColor]];
+    return labelTarget;
+}
+
+-(UILabel *) setLabelToCellDate: (UILabel *) labelTarget andText: (NSString *) text{
+    labelTarget = [[UILabel alloc] initWithFrame:CGRectMake(220, 20, 150, 30)];
+    [labelTarget setText:text];
+    [labelTarget setFont:[UIFont systemFontOfSize:10]];
+    [labelTarget setTextColor:[UIColor grayColor]];
+    return labelTarget;
+}
+
+
 // Return the number of rows for each section in your static table
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    switch(section)
-    {
-        case 0:  return 2;  // section 0 has 2 rows
-        case 1:  return 2;  // section 1 has 1 row
-        case 2:  return 2;  // section 2 has 2 rows
-        case 3:  return 2;  // section 3 has 1 row
-        default: return 0;
-    };
+    return 1;
 }
 
 // Return the row for the corresponding section and row
@@ -74,26 +124,22 @@
         case 0:
         switch(indexPath.row)
         {
-            case 0: return self.highestValueCell1;  // section 0, row 0 is the first name
-            case 1: return self.highestValueCell2;   // section 0, row 1 is the last name
+            case 0: return self.highestValueCell;  // section 0, row 0 is the first name
         }
         case 1:
         switch(indexPath.row)
         {
-            case 0: return self.highestRateCell1;      // section 1, row 0 is the share option
-            case 1: return self.highestRateCell2;      // section 1, row 0 is the share option
+            case 0: return self.highestRateCell;      // section 1, row 0 is the share option
         }
         case 2:
             switch(indexPath.row)
         {
-            case 0: return self.withdrawMostCell1;      // section 1, row 0 is the share option
-            case 1: return self.withdrawMostCell2;      // section 1, row 0 is the share option
+            case 0: return self.withdrawMostCell;      // section 1, row 0 is the share option
         }
         case 3:
             switch(indexPath.row)
         {
-            case 0: return self.buyingTimeCell1;      // section 1, row 0 is the share option
-            case 1: return self.buyingTimeCell2;      // section 1, row 0 is the share option
+            case 0: return self.buyingTimeCell;      // section 1, row 0 is the share option
         }
             
     }
